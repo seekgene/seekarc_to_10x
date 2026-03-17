@@ -50,7 +50,7 @@ conda activate seekarc_env
 Ensure the following tools are installed and their paths are correctly configured in `pipeline.py` (or accessible via `$PATH`):
 
 *   **Fastp**: Included in the `bin/` directory of this repository.
-*   **conv.0.1.1**: Included in the `bin/` directory of this repository.
+*   **conv.0.1.2**: Included in the `bin/` directory of this repository.
 
 ## Quick Start
 
@@ -166,7 +166,7 @@ This is the core conversion step.
 *   **Mapping**:
     *   **Multiome**: A mapping file (`dd_rna_atac_map.tsv`) is created to link SeekARC barcodes to their 10x counterparts. This file contains three columns (SeekARC Barcode, 10x RNA Barcode, 10x ATAC Barcode) as 10x RNA and ATAC libraries use different barcodes.
     *   **ATAC**: A direct mapping is performed using the ATAC whitelist. A `map.tsv` file is generated in `{outdir}/data/`.
-*   **File Conversion**: The `conv.0.1.1` tool and custom Python scripts perform the following operations to ensure full Cell Ranger compatibility:
+*   **File Conversion**: The `conv.0.1.2` tool and custom Python scripts perform the following operations to ensure full Cell Ranger compatibility:
     *   **Barcode Correction**: Corrects sequencing errors based on the 10x whitelist (allowing 1 bp mismatch).
     *   **Sequence Trimming**: Removes adapter sequences and TSO (Template Switch Oligo) sequences (Multiome RNA only).
     *   **Reformatting**: Transforms Fastq headers and sequence structures.

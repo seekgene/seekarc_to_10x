@@ -50,7 +50,7 @@ conda activate seekarc_env
 请确保以下工具已安装，并且在 `pipeline.py` 中正确配置了路径（或已添加至系统 `$PATH`）：
 
 *   **Fastp**：已包含在项目的 `bin/` 目录下。
-*   **conv.0.1.1**：已包含在项目的 `bin/` 目录下。
+*   **conv.0.1.2**：已包含在项目的 `bin/` 目录下。
 
 ## 快速开始 (Quick Start)
 
@@ -166,7 +166,7 @@ python pipeline.py \
 *   **映射 (Mapping)**：
     *   **Multiome**：创建映射文件 (`dd_rna_atac_map.tsv`) 以关联 SeekARC Barcode 和 10x Barcode。由于 10x RNA 和 ATAC 文库的 Barcode 不同，该文件包含三列：SeekARC Barcode、10x RNA Barcode、10x ATAC Barcode。
     *   **ATAC**：使用 ATAC 白名单进行直接映射。在 `{outdir}/data/` 生成 `map.tsv` 文件。
-*   **文件转换**：使用 `conv.0.1.1` 工具和自定义 Python 脚本进行以下处理，使其完全兼容 Cell Ranger：
+*   **文件转换**：使用 `conv.0.1.2` 工具和自定义 Python 脚本进行以下处理，使其完全兼容 Cell Ranger：
     *   **条形码矫正 (Barcode Correction)**：基于 10x 白名单修正测序错误（允许 1 bp 错配）。
     *   **序列修剪 (Trimming)**：去除接头序列及 TSO (Template Switch Oligo) 序列（仅 Multiome RNA）。
     *   **格式重构 (Reformatting)**：转换 Fastq Header 和序列结构。

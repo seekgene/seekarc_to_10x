@@ -103,7 +103,7 @@ def main():
     wl_dd = os.path.join(current_dir, "lib/barcode/P3CB.barcode.txt.gz")
     fastp_py = os.path.join(current_dir, "lib/fastp/fastp.py")
     fastp_table_py = os.path.join(current_dir, "lib/fastp/fastp_table.py")
-    conv_tool = os.path.join(current_dir, "bin/conv.0.1.1")
+    conv_tool = os.path.join(current_dir, "bin/conv.0.1.2")
     fastp_tool = os.path.join(current_dir, "bin/fastp")
     seekarc_rna_script = os.path.join(current_dir, "lib/seekarctools_step1/seekarc_rna_step1_standalone.py")
     seekarc_atac_script = os.path.join(current_dir, "lib/seekarctools_step1/seekarc_atac_step1_standalone.py")
